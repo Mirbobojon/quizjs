@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+
+
+body {
+  height: 100vh;
+  background-color: aqua;
+  background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);;
+}
+
+.box {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  max-width: 450px;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0px 0px 18px 2px rgba(0,0,0,0.75);
+  height: 420px;
+  border: solid 2px black;
+ 
+}
+
+label.radio {
+  display: block;
+  text-align: left;
+  padding: 15px;
+  margin-bottom: 5px;
+  font-size: 20px;
+}
+
+label.radio+.radio {
+  margin-left: 0;
+}
+
+label.radio input {
+  margin-right: 10px;
+}
+
+.button {
+  justify-content: center;
+  height: 50px;
+  width: 140px;
+  margin: 0 15px;
+  box-shadow: 0px 0px 6px -2px rgba(0,0,0,0.75);
+  color: #fff;
+  border-radius: 20px;
+  border: none;
+  margin-top: 20px;
+  background: #86A8E7;
+}
+.button:hover {
+  cursor: pointer;
+        transition: all 1s;
+        box-shadow: none;
+}
+
+.omad {
+  font-size: 25px;
+}
+
+</style>
+<body>
+
+    <div class="box">
+        <div class="card">
+            <div class="card-content">
+              <div class="content">
+                <h1>Testni Boshlash</h1>
+                <p class='omad'>💪 Omad! 💪 </p>
+                <button class="button is-info is-medium" onClick={onQuizStart}><a href="./main.html">Boshla</a></button>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    
+</body>
+</html>
